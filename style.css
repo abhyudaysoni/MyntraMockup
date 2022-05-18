@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.site{
+    height: 100vh;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+header{
+    display: flex;
+    height: 70px;
+    background-color: black;
+    color: white;
+    padding: 0 4%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+header .logo-image img{
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+header .logo-image img:hover{
+    transform: scale(1.1)
+}
+header .header-right{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    text-transform: uppercase;
+
+    justify-content: space-between;
+}
+header .header-right img{
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+header .header-right img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+header .header-right button{
+    width: 100px;
+    cursor: pointer;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    transition: transform 0.2s ease;
+}
+header .header-right button:hover{
+    background-color: red;
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.1);
+
+}
+.each-item{
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+}
+.each-item-wrapper{
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.each-item{
+    width: auto;
+    height: auto;
+    /* border: 1px solid white; */
+    color: white;
+}
+.each-item .image-wrapper{
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.each-item .image-wrapper img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.each-item .image-wrapper img:hover{
+    transform: scale(1.1);
+}
+.each-item .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-wrapper .brand-name{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.content-wrapper .brand-desc{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.content-wrapper .prices{
+    font-size: 18px;
+}
+.content-wrapper .actual-price{
+    opacity: 50%;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+.content-wrapper .discount{
+    color: red;
+    font-size: 15px;
+}
+.each-item .add-to-cart-btn button{
+    cursor: pointer;
+    height: 40px;
+    width: 80%;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    transition: transform 0.2s ease;
+
+}
+.each-item .add-to-cart-btn button:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.footer-navigation{
+    display: flex;
+    justify-content: center
+}
+.footer-btn{
+    padding-right: 15px;
+    padding-right: 15px;
+}
+.footer-btn button{
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(179, 1, 179);
+    border: none;
+    text-decoration: underline;
+}
